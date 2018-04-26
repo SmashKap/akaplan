@@ -1,0 +1,63 @@
+/*
+Theme Name: Twenty Seventeen Child
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+Author: Ashley Kaplan
+Author URI: https://ashleykaplan.com/
+Template:  twentyseventeen
+Description: Twenty Seventeen Child provides customizations to WordPress's Default Twenty Seventeen theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentyseventeen
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+*/
+
+/** FRONT PAGE STYLES **/
+.custom-header {
+  background: url('images/blue-tint-alexander-andrews-458492-unsplash.jpg') no-repeat fixed center / cover;
+  height: 760px;
+}
+
+#masthead .wrap {
+  text-align: left;
+}
+
+.site-branding a {
+  float: left;
+  padding: 0 2em 0 0;
+}
+
+body:not(.title-tagline-hidden) .site-branding-text {
+  float: left;
+  clear: both;
+}
+
+.site-branding-text h1.site-title a {
+  color: #434949;
+}
+
+.site-branding-text p.site-description {
+  color: #8a9696;
+}
+
+.background-fixed .panel-image {
+  max-height: 300px;
+}
+
+.panel-content {
+  max-height: 300px;
+}
+
+.page-one-column .panel-content .wrap {
+  max-height: 300px;
+  padding: 4em 2em;
+}
+
+.page.page-one-column .entry-header, .twentyseventeen-front-page.page-one-column .entry-header {
+  display: none;
+}
+
+.page .entry-header .edit-link {
+  display: none;
+}
