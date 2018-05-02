@@ -13,10 +13,89 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 
 */
 
+/** General **/
+body,
+button,
+input,
+select,
+textarea {
+	font-family: "Oxygen", "hind", helvetica, arial, sans-serif;
+}
+
+p {
+  text-align: left;
+  padding-bottom: 1em;
+}
+
+h2 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	text-transform: uppercase;
+	margin: 1em auto;
+	color: #434949;
+}
+
+h3 {
+	font-family: 'Abel', sans-serif;
+	font-weight: bold;
+	color: #819696;
+}
+
+h4 {
+	font-family: 'Abel', sans-serif;
+	font-weight: bold;
+	color: #819696;
+}
+
+.colors-custom .entry-content a {
+  color: #1cc2d1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.homepage p a {
+  color: #1cc2d1;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #1cc2d1;
+}
+
+section {
+  background: #fefefe;
+}
+
+/** Page navigation menu styles **/
+div.navigation-top .wrap {
+  padding: 1em;
+}
+
+#site-navigation #top-menu a img {
+  width: auto;
+  height: 50px;
+  padding-right: 1.25em;
+}
+
+#site-navigation #top-menu #menu-item-158 a {
+  padding: 0;
+}
+
+ul#top-menu.menu li a {
+  color: #8a9696;
+  vertical-align: middle;
+  font-family: 'Abel';
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+ul#top-menu.menu li a:hover {
+  color: #1cc2d1;
+}
+
 /** FRONT PAGE STYLES **/
 .custom-header {
-  background: url('images/blue-tint-alexander-andrews-458492-unsplash.jpg') no-repeat fixed center / cover;
-  height: 760px;
+  background: url('images/blue-cactus-khai-sze-ong-308080-unsplash.jpg') no-repeat fixed bottom / cover;
+  height: 720px;
 }
 
 #masthead .wrap {
@@ -30,15 +109,19 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 
 body:not(.title-tagline-hidden) .site-branding-text {
   float: left;
-  clear: both;
+  clear: none;
 }
 
 .site-branding-text h1.site-title a {
   color: #434949;
+  font-family: 'PT Sans Narrow';
+  font-size: 1.5em;
 }
 
 .site-branding-text p.site-description {
   color: #8a9696;
+  font-family: 'Abel';
+  font-size: 1.2em;
 }
 
 .background-fixed .panel-image {
@@ -60,4 +143,337 @@ body:not(.title-tagline-hidden) .site-branding-text {
 
 .page .entry-header .edit-link {
   display: none;
+}
+
+.homepage h2 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+  margin: 1em auto;
+  text-align: center;
+  color: #434949;
+}
+
+.colors-custom h2 a {
+  color: #434949;
+  font-weight: bold;
+}
+
+div.homepage {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em 0;
+  text-align: center;
+  min-height: 300px;
+}
+
+.homepage ul li {
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: top;
+  padding: 0 2em;
+}
+
+.homepage ul li h3 {
+  font-family: 'Abel', sans-serif;
+  padding-top: .9em;
+  font-weight: bold;
+  text-align: center;
+  color: #8a9696;
+}
+
+/** Front page about styles **/
+div.intro {
+  width: 60%;
+}
+
+
+/** Front page recent posts styles **/
+.recent-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+#recent-posts h3 {
+  padding-top: 0;
+  text-align: left;
+}
+
+#recent-posts h3 a {
+  color: #8a9696;
+  font-weight: bold;
+}
+
+.blog-post {
+  grid-area: 1/1/2/2;
+  padding: 0 5%;
+  margin-bottom: 2em;
+}
+
+.twitter-feed {
+  grid-area: 1/2/2/3;
+  padding: 0 5%;
+  margin-bottom: 2em;
+}
+
+div#secondary.widget-area {
+  padding-top: 0;
+  padding-bottom: 0.75em;
+}
+
+#ctf .ctf-item:first-child {
+  padding: 0 0 1em;
+}
+
+#ctf .ctf-item {
+  padding: 1em 0 0;
+}
+
+div.ctf-context, div.ctf-author-box {
+  text-align: left;
+}
+
+#ctf .ctf-author-name {
+  margin-left: 0;
+}
+
+#ctf .ctf-screename-sep {
+  display: none;
+}
+
+div.take-action-link {
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Abel';
+}
+
+div.take-action-link a:hover {
+  color: #1cc2d1;
+}
+
+/** Front page services styles **/
+.blue-brick-background {
+  background: url('images/blue-brick-background-patrick-tomasso-208114-unsplash.jpg') no-repeat fixed center / cover;
+  height: 100px;
+  opacity: 0.8;
+}
+
+img.attachment-64.size-64 {
+  height: 125px;
+  width: auto;
+}
+
+/** Front page portfolio styles **/
+#portfolio h2 {
+  margin-bottom: 0.5em;
+}
+
+ul.featured-projects li {
+  padding: 0 0.5em;
+}
+
+#portfolio img {
+  border: 1px solid hsl( 183, 50%, 93% );
+}
+
+#portfolio h3 {
+  padding-top: 0;
+}
+
+#portfolio h3 a {
+  color: #8a9696;
+}
+
+
+/** Front page contact styles **/
+#contact h2 {
+  margin-bottom: 0;
+}
+
+div.contact-form {
+  width: 60%;
+  margin: auto;
+}
+
+div.contact-form h2, p {
+   margin: 0;
+}
+
+div.nf-form-content {
+  margin: 2em 0 0 0;
+}
+
+.nf-form-fields-required {
+  display: none;
+}
+
+.ninja-forms-req-symbol {
+  display: none;
+}
+
+#nf-form-title-1 {
+  display: none;
+}
+
+#nf-field-1-container {
+  width: 47%;
+  float: left;
+  margin-right: 3%;
+  display: block;
+}
+
+#nf-field-2-container {
+  width: 47%;
+  float: right;
+  margin-left: 3%;
+  display: block;
+  clear: none;
+}
+
+#nf-field-3-container {
+  width: 100%;
+}
+
+div.nf-input-limit {
+  display: none;
+}
+
+#nf-field-4-container {
+  width: 100%;
+  margin-top: 1.5em;
+}
+
+#nf-field-4 {
+  background: #1cc2d1;
+  float: left;
+}
+
+/** Footer styles **/
+footer#colophon.site-footer {
+  margin-top: 1em;
+  background: #CAE2EE;
+
+}
+
+#mc4wp_form_widget-2,
+section#search-4.widget.widget_search {
+  background: #cae2ee;
+}
+
+footer#colophon.site-footer div.wrap {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.site-footer .widget-column.footer-widget-1,
+.site-footer .widget-column.footer-widget-2 {
+  width: 50%;
+}
+
+div.widget-column.footer-widget-1 {
+  padding-right: 3%;
+}
+
+div.widget-column.footer-widget-2 {
+  padding-left: 3%;
+}
+
+footer h2.widget-title {
+  font-family: 'Abel';
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+#mc4wp-form-1 p label {
+  display: none;
+}
+
+#mc4wp-form-1 div p input {
+  /**border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-radius: 0;**/
+}
+
+nav.social-navigation {
+	width: 50%;
+}
+
+#menu-social-links-menu a {
+  background: #1cc2d1;
+}
+
+div.site-description {
+  text-align: left;
+	float: left;
+	padding-left: 3%;
+ }
+
+div.site-description p {
+  color: #434949;
+  clear: both;
+  font-family: 'Abel';
+  font-weight: bold;
+  font-size: 0.875em;
+  padding: 0;
+  line-height: 1.5;
+}
+
+div.site-info {
+  display: none;
+}
+
+/** Page styles **/
+div.single-featured-image-header {
+
+}
+
+/** Blog posts page **/
+aside#secondary.widget-area {
+	width: 25%;
+}
+
+aside#secondary.widget-area .widget_text img {
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+}
+
+.signup-input input, .signup-submit input {
+	width: 100%;
+}
+
+/** Portfolio page **/
+#primary-portfolio {
+	width: 100%;
+}
+
+#primary-portfolio h2 {
+	margin-top: 0;
+}
+
+article.project {
+	margin: 0;
+	clear: both;
+}
+
+div.project-images {
+	float: left;
+	width: 50%;
+}
+
+div.project-images img {
+	display: block;
+	margin-bottom: 15%;
+	width: 100%;
+}
+
+aside.project-sidebar {
+	float: left;
+	width: 45%;
+	margin-left: 5%;
+}
+
+#primary-portfolio div.take-action-link {
+	margin-bottom: 15%;
 }

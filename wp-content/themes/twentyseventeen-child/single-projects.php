@@ -18,15 +18,29 @@ get_header(); ?>
 
 			<?php
 			while ( have_posts() ) : the_post();
+				$size = "full";
+				$image_1 = get_field('image_1');
+				$service_type = get_field('service_type');
+				$project_link = get_field('project_link');
+			?>
 
-				get_template_part( 'template-parts/page/content', 'page' );
+			<article class="project">
+				<h2><?php the_title(); ?></h2>
+				<?php if ($image_1) {
+					echo wp_get_attachment_image($image_1, $size);
+				} ?>
+				<h4><?php echo $service_type; ?></h4>
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+				<?php the_content(); ?>
 
-			endwhile; // End of the loop.
+				<p class="read-more-link"><a href="<?php echo $link; ?>">View Project &rsaquo;</a>
+				</p>
+
+			</article>
+
+
+
+			<?php endwhile; // End of the loop.
 			?>
 
 		</main><!-- #main -->
