@@ -13,33 +13,49 @@
 get_header(); ?>
 
 <div class="wrap">
-	<div id="primary" class="content-area">
+	<div id="primary-single-project" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php
 			while ( have_posts() ) : the_post();
 				$size = "full";
 				$image_1 = get_field('image_1');
+				$image_2 = get_field('image_2');
+				$image_3 = get_field('image_3');
 				$service_type = get_field('service_type');
 				$project_link = get_field('project_link');
 			?>
 
 			<article class="project">
-				<h2><?php the_title(); ?></h2>
-				<?php if ($image_1) {
-					echo wp_get_attachment_image($image_1, $size);
-				} ?>
-				<h4><?php echo $service_type; ?></h4>
+				<header class="entry-header">
+					<h1><?php the_title(); ?></h1>
+				</header>
 
-				<?php the_content(); ?>
+				<h5><?php echo $service_type; ?></h5>
 
-				<p class="read-more-link"><a href="<?php echo $link; ?>">View Project &rsaquo;</a>
-				</p>
+				<p><?php the_content(); ?></p>
+
+				<?php if ($project_link) { ?>
+					<div class="take-action-link">
+						<a href="<?php echo $project_link; ?>">View Project &rsaquo;&rsaquo;</a>
+					</div>
+				<?php } ?>
+
+				<div class="single-project-images">
+					<?php if ($image_1) {
+						echo wp_get_attachment_image($image_1, $size);
+					} ?>
+
+					<?php if ($image_2) {
+						echo wp_get_attachment_image($image_2, $size);
+					} ?>
+
+					<?php if ($image_3) {
+						echo wp_get_attachment_image($image_3, $size);
+					} ?>
+				</div>
 
 			</article>
-
-
-
 			<?php endwhile; // End of the loop.
 			?>
 

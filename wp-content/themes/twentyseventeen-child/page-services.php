@@ -39,31 +39,39 @@ get_header(); ?>
 				<div class="service-list-grid">
 					<div class="service-1">
 						<h3><?php echo $service_1 ?></h3>
+					</div>
+					<div class="description-1"
 						<p><?php echo $description_1 ?></p>
 					</div>
 					<div class="icon-1">
-						<?php echo wp_get_attachment_image($icon_1) ?>
+						<?php echo wp_get_attachment_image($icon_1, 'medium') ?>
 					</div>
 					<div class="service-2">
 						<h3><?php echo $service_2 ?></h3>
+					</div>
+					<div class="description-2"
 						<p><?php echo $description_2 ?></p>
 					</div>
 					<div class="icon-2">
-						<?php echo wp_get_attachment_image($icon_2) ?>
+						<?php echo wp_get_attachment_image($icon_2, 'medium') ?>
 					</div>
 					<div class="service-3">
 						<h3><?php echo $service_3 ?></h3>
+					</div>
+					<div class="description-3"
 						<p><?php echo $description_3 ?></p>
 					</div>
 					<div class="icon-3">
-						<?php echo wp_get_attachment_image($icon_3) ?>
+						<?php echo wp_get_attachment_image($icon_3, 'medium') ?>
 					</div>
 					<div class="service-4">
 						<h3><?php echo $service_4 ?></h3>
+					</div>
+					<div class="description-4"
 						<p><?php echo $description_4 ?></p>
 					</div>
 					<div class="icon-4">
-						<?php echo wp_get_attachment_image($icon_4) ?>
+						<?php echo wp_get_attachment_image($icon_4, 'medium') ?>
 					</div>
 
 				</div>

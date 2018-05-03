@@ -15,6 +15,9 @@ get_header(); ?>
 <div class="wrap">
 	<div id="primary-portfolio" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<header class="entry-header">
+				<h1>Portfolio</h1>
+			</header>
 
 			<?php
 			while ( have_posts() ) : the_post();
