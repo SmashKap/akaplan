@@ -50,6 +50,7 @@ h1 {
 	margin-bottom: 0.25em;
 	color: #434949 !important;
 	padding: 1em 0;
+	margin-bottom: 1em;
 }
 
 h2 {
@@ -62,13 +63,13 @@ h2 {
 h3 {
 	font-family: 'Abel', sans-serif;
 	font-weight: bold;
-	color: #819696 !important;
+	color: #8a9696 !important;
 }
 
 h4 {
 	font-family: 'Abel', sans-serif;
 	font-weight: bold;
-	color: #819696 !important;
+	color: #8a9696 !important;
 }
 
 h5 {
@@ -468,9 +469,30 @@ div.single-featured-image-header img {
 	margin-bottom: 1em;
 }
 
-/** About page styles
+/** About page styles **/
 
 /** Blog posts page **/
+h1.page-title {
+	font-size: 2em;
+	font-weight: 800;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	margin-bottom: 0.25em;
+}
+
+span.edit-link {
+	display: none;
+}
+
+h2.entry-title {
+	margin-top: 0;
+}
+
+.colors-custom .entry-meta a {
+	color: #1cc2d1 !important;
+	font-size: 1.3em;
+}
+
 aside#secondary.widget-area {
 	width: 25%;
 }
@@ -483,6 +505,11 @@ aside#secondary.widget-area .widget_text img {
 
 .signup-input input, .signup-submit input {
 	width: 100%;
+}
+
+/** Single post page **/
+a.post-edit-link {
+	display: none;
 }
 
 /** Services page **/
