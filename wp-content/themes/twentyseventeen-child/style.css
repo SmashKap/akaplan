@@ -424,11 +424,8 @@ footer h2.widget-title {
   display: none;
 }
 
-#mc4wp-form-1 div p input {
-  /**border-top-style: none;
-  border-left-style: none;
-  border-right-style: none;
-  border-radius: 0;**/
+#mc4wp-form-2 div p input[type="submit"]:hover {
+	background-color: #1cc2d1;
 }
 
 nav.social-navigation {
@@ -457,6 +454,10 @@ div.site-description p {
 
 div.site-info {
   display: none;
+}
+
+#search-4 button:hover {
+	background-color: #1cc2d1;
 }
 
 /** Page styles **/
@@ -488,9 +489,26 @@ h2.entry-title {
 	margin-top: 0;
 }
 
-.colors-custom .entry-meta a {
+div.entry-meta a time.entry-date.published {
+	color: #1cc2d1;
+	font-size: 1.2em;
+}
+
+.colors-custom .entry-meta a span.byline {
 	color: #1cc2d1 !important;
 	font-size: 1.3em;
+}
+
+h2.widget-title {
+	font-size: 1.2em;
+}
+
+input#submit.submit:hover {
+	background-color: #1cc2d1;
+}
+
+#mc4wp-form-1 div p input[type="submit"]:hover {
+	background-color: #1cc2d1;
 }
 
 aside#secondary.widget-area {
@@ -507,8 +525,31 @@ aside#secondary.widget-area .widget_text img {
 	width: 100%;
 }
 
+#search-3 button:hover {
+	background-color: #1cc2d1;
+}
+
 /** Single post page **/
-a.post-edit-link {
+#primary-single-post {
+	width: 62%;
+	float: left;
+}
+
+div.entry-meta span.posted-on a,
+div.entry-meta span.byline {
+	color: #1cc2d1;
+	font-size: 1.2em;
+}
+
+div.entry-meta span.byline a {
+	color: #1cc2d1;
+}
+
+.colors-custom .entry-footer {
+	border-top: none;
+}
+
+.colors-custom .entry-footer .edit-link a.post-edit-link {
 	display: none;
 }
 
