@@ -42,17 +42,21 @@ get_header(); ?>
 				<?php } ?>
 
 				<div class="single-project-images">
-					<?php if ($image_1) {
-						echo wp_get_attachment_image($image_1, $size);
-					} ?>
-
-					<?php if ($image_2) {
-						echo wp_get_attachment_image($image_2, $size);
-					} ?>
-
-					<?php if ($image_3) {
-						echo wp_get_attachment_image($image_3, $size);
-					} ?>
+					<div class="project-image-1">
+						<?php if ($image_1) {
+							echo wp_get_attachment_image($image_1, $size);
+						} ?>
+					</div>
+					<div class="project-image-2">
+						<?php if ($image_2) {
+							echo wp_get_attachment_image($image_2, $size);
+						} ?>
+					</div>
+					<div class="project-image-3">
+						<?php if ($image_3) {
+							echo wp_get_attachment_image($image_3, $size);
+						} ?>
+					</div>
 				</div>
 
 			</article>
