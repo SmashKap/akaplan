@@ -37,7 +37,7 @@ get_header(); ?>
 
 				<?php if ($project_link) { ?>
 					<div class="take-action-link">
-						<a href="<?php echo $project_link; ?>">View Project &rsaquo;&rsaquo;</a>
+						<a href="<?php echo $project_link; ?>" target="_blank">View Project Online &rsaquo;&rsaquo;</a>
 					</div>
 				<?php } ?>
 
