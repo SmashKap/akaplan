@@ -146,8 +146,6 @@ get_header('front-page'); ?>
 					<?php endif; ?>
 				</div>
 			</div>
-			<div class="blue-brick-background">
-			</div>
 		</section>
 
 	</main><!-- #main -->

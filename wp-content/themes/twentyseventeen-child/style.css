@@ -99,6 +99,17 @@ section {
   background: #fefefe;
 }
 
+@media screen and (min-width: 960px) {
+	div.page-featured-image-header img {
+		display: none;
+	}
+
+	div.single-featured-image-header img {
+		max-height: 400px;
+		width: auto;
+	}
+}
+
 /** Custom header **/
 .custom-logo-link img {
 	max-height: 100px;
@@ -235,6 +246,26 @@ div.homepage {
   color: #8a9696;
 }
 
+.blue-brick-background {
+	background-color: #8a9696;
+	height: 2px;
+	margin: 10px;
+}
+
+@media screen and (max-width: 959px) {
+	#about div.blue-brick-background {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.blue-brick-background {
+	  background: url('images/blue-brick-background-patrick-tomasso-208114-unsplash.jpg') no-repeat fixed center / cover;
+	  height: 100px;
+	  opacity: 0.8;
+	}
+}
+
 /** Front page about styles **/
 div.intro {
   width: 60%;
@@ -321,12 +352,6 @@ div.take-action-link a:hover {
 }
 
 /** Front page services styles **/
-.blue-brick-background {
-  background: url('images/blue-brick-background-patrick-tomasso-208114-unsplash.jpg') no-repeat fixed center / cover;
-  height: 100px;
-  opacity: 0.8;
-}
-
 div.homepage.services {
 	margin: auto 4em;
 }
